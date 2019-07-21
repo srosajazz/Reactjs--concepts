@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/12.3.1/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js add tyle-loader
+  /usr/local/Cellar/node/12.3.1/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js add file-loader -D
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin
@@ -14,17 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/tyle-loader: Not found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:66091:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:129590:22)
-      at Request.emit (events.js:200:13)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:130562:10)
-      at Request.emit (events.js:200:13)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:130484:12)
-      at Object.onceWrapper (events.js:288:20)
-      at IncomingMessage.emit (events.js:205:15)
-      at endReadableNT (_stream_readable.js:1137:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:9)
+  Error: EACCES: permission denied, unlink '/Users/sergiorosa_local/Documents/reactjs--concepts/node_modules/loader-utils/node_modules/json5/CHANGELOG.md'
 
 npm manifest: 
   {
@@ -42,6 +32,7 @@ npm manifest:
       "@babel/preset-react": "^7.0.0",
       "babel-loader": "^8.0.6",
       "css-loader": "^3.1.0",
+      "style-loader": "^0.23.1",
       "react": "^16.8.6",
       "react-dom": "^16.8.6",
       "webpack": "^4.36.1",
@@ -4496,6 +4487,14 @@ Lockfile:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
     integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+  
+  style-loader@^0.23.1:
+    version "0.23.1"
+    resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.23.1.tgz#cb9154606f3e771ab6c4ab637026a1049174d925"
+    integrity sha512-XK+uv9kWwhZMZ1y7mysB+zoihsEj4wneFWAS5qoiLwzW0WzSqMrrsIy+a3zkQJq0ipFtBpX5W3MqyRIBF/WFGg==
+    dependencies:
+      loader-utils "^1.1.0"
+      schema-utils "^1.0.0"
   
   supports-color@6.1.0, supports-color@^6.1.0:
     version "6.1.0"
