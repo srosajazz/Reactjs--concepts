@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
 
-// import profile from './assets/guy.jpg';
-import TeachList from './components/TechList';
+import Header from './components/Header';
+import PostList from './components/PostList';
 
 function App() {
-  //   return <img width="200" src={profile} />;
-  return <TeachList />;
+  return (
+    <>
+      <Header />
+      <PostList />
+    </>
+  );
 }
 
 export default App;
