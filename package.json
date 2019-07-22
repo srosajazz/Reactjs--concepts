@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development"
+    "dev": "webpack-dev-server --mode development",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
